@@ -1,0 +1,12 @@
+{
+    "utilityToken": "0xd568CEA28d0621415c63c35dD7FAe1abBa47AB20",
+    "creditToken": "0xCaFcCa90Fd8258e9094DbB2C476343FdE44a18eD",
+    "demoToken": "0x0EDE73C2B4432bC2A0105CBa807508D5B91aba52",
+    "peggedToken": "0xE3e525aA9bDfbe589A1b0454FEAF0446B97D5692",
+    "staking": "0x33750D67829D0f69Ac076508771Ba8aA613fb4Da",
+    "kycProvider": "0x5a9a4bb6be6fA1e8fF92E992a6432C58ff2A95B7",
+    "creditAllocationProvider": "0x3489Fd0aE39aCF1f746a4bcD2f54Aa28B2E98C75",
+    "directAllocationProvider": "0xde784da2abfF2adA8024FED2EcC30b3f0ffe9dDe",
+    "stakingAllocationProvider": "0x96a6940A3Df02fa95470444f3AfbA1DADa84C2df",
+    "allocationProxy": "0x09e7D67456D9706c50aD936b01B0469c7F39b6F0"
+}

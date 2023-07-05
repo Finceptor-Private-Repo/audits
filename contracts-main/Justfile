@@ -1,0 +1,37 @@
+clean:
+    npx hardhat clean
+
+compile:
+    npx hardhat compile
+
+token:
+    npx hardhat run scripts/deployTokens.js --network polygonMumbai
+
+staking:
+    npx hardhat run scripts/deployStaking.js --network polygonMumbai
+
+kyc:
+    npx hardhat run scripts/deployKycProvider.js --network polygonMumbai
+
+allocation:
+    npx hardhat run scripts/deployAllocationProvider.js --network polygonMumbai
+
+project:
+    npx hardhat run scripts/deployProjectSale.js --network polygonMumbai
+
+display:
+    #!/bin/env node
+
+    const path = require('path');
+    const fs = require('fs');
+
+    const resolved = path.resolve("./contracts.json");
+    console.log(`Displaying contracts from ${resolved}`);
+
+    const contracts = JSON.parse(fs.readFileSync(resolved, 'utf8'));
+    const list = [];
+    for (const [name, address] of Object.entries(contracts)) {
+        const blockExplorer = `https://mumbai.polygonscan.com/address/${address}`;
+        list.push({ name, address, blockExplorer });
+    }
+    console.table(list);
